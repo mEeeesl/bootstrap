@@ -1,0 +1,178 @@
+<html>
+<head>
+<title>flex</title>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'/>
+<style>
+    span {
+        display: block;
+    }
+</style>
+</head>
+<body>
+<div class='container'>
+    <div class='row mb-3'> <!-- 1. basic -->
+        <div class='col'>
+            <div class='p-2 bg-secondary text-black'>
+                <span class='bg-secondary text-white'>item0</span>
+                <span class='bg-danger'>item1</span>
+                <span class='bg-success'>item2</span>
+                <span class='bg-info'>item3</span>
+                <span class='bg-primary'>item4</span>
+                <span class='bg-warning'>item5</span>
+                <span class='bg-light'>item6</span>
+                <span class='bg-transparent'>item7</span>
+                <span class='bg-white'>item8</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class='row mt-3'> <!-- 2. d-flex = display: flex (box) -->
+        <div class='col'>
+            <div class='d-flex p-2 bg-secondary text-black' style='height: 6rem'>
+                <span class='bg-secondary text-white'>item0</span>
+                <span class='bg-danger'>item1</span>
+                <span class='bg-success'>item2</span>
+                <span class='bg-info'>item3</span>
+                <span class='bg-primary'>item4</span>
+                <span class='bg-warning'>item5</span>
+                <span class='bg-light'>item6</span>
+                <span class='bg-transparent text-white'>item7</span>
+                <span class='bg-white'>item8</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class='row mt-3'> <!-- 3. d-inline-flex -->
+        <div class='col'>
+            <div class='d-inline-flex p-2 bg-secondary text-black'>
+                    <span class='bg-secondary text-white'>item0</span>
+                    <span class='bg-danger'>item1</span>
+                    <span class='bg-success'>item2</span>
+                    <span class='bg-info'>item3</span>
+                    <span class='bg-primary'>item4</span>
+                    <span class='bg-warning'>item5</span>
+                    <span class='bg-light'>item6</span>
+                    <span class='bg-transparent text-white'>item7</span>
+                    <span class='bg-white'>item8</span>
+            </div>
+        </div>
+    </div>
+
+    <div class='row mt-3'> <!-- 4. flex-row / row = 가로배치-->
+        <div class='col'>
+            <div class='d-flex flex-row p-2 bg-secondary text-black'>
+                <span class='bg-secondary text-white'>item0</span>
+                <span class='bg-danger'>item1</span>
+                <span class='bg-success'>item2</span>
+                <span class='bg-info'>item3</span>
+                <span class='bg-primary'>item4</span>
+                <span class='bg-warning'>item5</span>
+                <span class='bg-light'>item6</span>
+                <span class='bg-transparent text-white'>item7</span>
+                <span class='bg-white'>item8</span>
+            </div>
+        </div>
+    </div>
+
+    <div class='row mt-3'> <!-- 5. flex-column / column = 세로배치-->
+        <div class='col'>
+            <div class='d-flex flex-column p-2 bg-secondary text-black'>
+                <span class='bg-secondary text-white'>item0</span>
+                <span class='bg-danger'>item1</span>
+                <span class='bg-success'>item2</span>
+                <span class='bg-info'>item3</span>
+                <span class='bg-primary'>item4</span>
+                <span class='bg-warning'>item5</span>
+                <span class='bg-light'>item6</span>
+                <span class='bg-transparent text-white'>item7</span>
+                <span class='bg-white'>item8</span>
+            </div>
+        </div>
+    </div>
+
+    <div class='row mt-3'> <!-- 6.justify-content-start ( justify = x축 조절 (start / center / end)) -->
+        <div class='col'>
+            <div class='d-flex justify-content-start p-2 bg-secondary text-black'>
+                <span class='bg-secondary text-white'>item0</span>
+                <span class='bg-danger'>item1</span>
+                <span class='bg-success'>item2</span>
+                <span class='bg-info'>item3</span>
+                <span class='bg-primary'>item4</span>
+                <span class='bg-warning'>item5</span>
+                <span class='bg-light'>item6</span>
+                <span class='bg-transparent text-white'>item7</span>
+                <span class='bg-white'>item8</span>
+            </div>
+        </div>
+    </div>
+
+    <div class='row mt-3'> <!-- 7. justify-content-center -->
+        <div class='col'>
+            <div class='d-flex justify-content-center p-2 bg-secondary text-black'>
+                <span class='bg-secondary text-white'>item0</span>
+                <span class='bg-danger'>item1</span>
+                <span class='bg-success'>item2</span>
+                <span class='bg-info'>item3</span>
+                <span class='bg-primary'>item4</span>
+                <span class='bg-warning'>item5</span>
+                <span class='bg-light'>item6</span>
+                <span class='bg-transparent text-white'>item7</span>
+                <span class='bg-white'>item8</span>
+            </div>
+        </div>
+    </div>
+
+    <div class='row mt-3'> <!-- 8. justify-content-end -->
+        <div class='col'>
+            <div class='d-flex justify-content-end p-2 bg-secondary text-black'>
+                <span class='bg-secondary text-white'>item0</span>
+                <span class='bg-danger'>item1</span>
+                <span class='bg-success'>item2</span>
+                <span class='bg-info'>item3</span>
+                <span class='bg-primary'>item4</span>
+                <span class='bg-warning'>item5</span>
+                <span class='bg-light'>item6</span>
+                <span class='bg-transparent text-white'>item7</span>
+                <span class='bg-white'>item8</span>
+            </div>
+        </div>
+    </div>
+
+    <div class='row mt-3'> <!-- 9. align-items-center ( align = y축 조절 (start-위 / center-중앙 / end-아래))-->
+        <div class='col'>
+            <div class='d-flex justify-content-center align-items-start p-2 bg-secondary text-black' style='height: 6rem'>
+                <span class='bg-secondary text-white'>item0</span>
+                <span class='bg-danger'>item1</span>
+                <span class='bg-success'>item2</span>
+                <span class='bg-info'>item3</span>
+                <span class='bg-primary'>item4</span>
+                <span class='bg-warning'>item5</span>
+                <span class='bg-light'>item6</span>
+                <span class='bg-transparent text-white'>item7</span>
+                <span class='bg-white'>item8</span>
+            </div>
+        </div>
+    </div>
+
+    <div class='row mt-3'> <!-- 10. flex-fill = fill = 공간을 100% 활용하여 채우기 -->
+        <div class='col'>
+            <div class='d-flex p-2 bg-secondary text-black'>
+                <span class='flxe-fill bg-secondary text-white'>item0</span>
+                <span class='flex-fill bg-danger'>item1</span>
+                <span class='flex-fill bg-success'>item2</span>
+                <span class='flex-fill bg-info'>item3</span>
+                <span class='flex-fill bg-primary'>item4</span>
+                <span class='flex-fill bg-warning'>item5</span>
+                <span class='flex-fill bg-light'>item6</span>
+                <span class='flex-fill bg-transparent text-white'>item7</span>
+                <span class='flex-fill bg-white'>item8</span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

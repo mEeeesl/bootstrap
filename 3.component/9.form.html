@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>form</title>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.css'/>
+</head>
+<body>
+<div class='container'>
+    <div class='row'>
+        <div class='col'> <!-- 1번째 방법 -->
+            <form><!--form 태그가 있으면 입력화면, 없으면 출력화면-->
+                <div class='form-group'>
+                    <label for='userId'>아이디: </label>
+                    <input type='email' class='form-control' id='userId'/>
+                    <small class='form-text text-muted'>이메일 형식의 아이디를 입력하세요.</small>
+                </div>
+                <div class='form-group'>
+                    <label for='userPw'>암호: </label>
+                    <input type='password' class='form-control' id='userPw'/>
+                </div>
+            </form>
+        </div>
+
+        <div class='col'> <!-- 2번째 방법 from-group-->
+            <form>
+                <div class='form-group row mt-4'>
+                    <label for='userId' class='col-2 col-form-label'>아이디: </label>
+                    <input type='email' class='col form-control' id='userId'/>
+                </div>
+                <div class='form-group row mt-4'>
+                    <label for='userPw' class='col-2 col-form-label'>암호: </label>
+                    <input type='password' class='col form-control' id='userPw'/>
+                </div>
+                <!--과제: 로그인 버튼과 암호 필드 사이에 여백 넣기
+                          로그인 버튼의 위치를 우측으로 둬라.-->
+                <div class='row mt-5 justify-content-end'>
+                    <div class='col-4 mt-5'>
+                        <button type='submit' class='btn btn-primary btn-block'>로그인</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class='col'> <!-- 3번째 방법 form-row -->
+            <form class='form-row align-item-center'>
+                <div class='col'>
+                    <div class='form-check form-check-inline'>
+                        <input type='checkbox' class='form-check-input' id='check1'/>
+                        <label class='form-check-label' for='check1'>1</label>
+                    </div>
+                    <div class='form-check form-check-inline'>
+                        <input type='checkbox' class='form-check-input' id='check2'/>
+                        <label class='form-check-label' for='check2'>2</label>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class='form-check form-check-inline'>
+                        <input type='radio' class='form-check-input' id='radio1'/>
+                        <label class='form-check-label' for='radio1'>1</label>
+                    </div>
+                    <div class='form-check form-check-inline'>
+                        <input type='radio' class='form-check-input' id='radio2'/>
+                        <label class='form-check-label' for='radio2'>2</label>
+                    </div>
+                </div>
+                <div class='col'>
+                    <input type='text' class='form-control-plaintext' value='a@a.com' readonly/>
+                </div>
+                <div class='col'>
+                    <input type='range' class='form-control-range'/>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+<!-- 
+    input type='password/email' class='form-control'
+
+    input type='checkbox/radio' class='form-check-input'
+
+    input type='text' class='form-control-plaintext'
+
+    input type='range' class='form-control-range'
+-->

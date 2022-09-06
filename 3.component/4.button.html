@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>button</title>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://code.jquery.com/jquery-3.6.0.js'></script><!-- 동적인 화면 만드려면 이거랑 3번째꺼 script가 있어야함 popper 말고-->
+<script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.js'></script><!-- dropdown 사용할때 script popper 있어야함 -->
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.js'></script><!--이게 맨 아래에 있어야함-->
+<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'/>
+<style>
+    
+</style>
+</head>
+<body>
+<div class='container'>
+    <div class='row'>
+        <div class='col'>
+            <button type='button' class='btn btn-primary'>Button</button>
+            <button type='button' class='btn btn-link' value='버튼'>Button</button>
+            <a href='#' class='btn btn-primary'>Link</a>
+            <input type='button' class='btn btn-primary' value='Input!!'/>
+        </div>
+        <div class='col'>
+            <button type='button' class='btn btn-outline-primary'>outline</button>
+        </div>
+    </div>
+
+    <div class='row mt-3'>
+        <div class='col'>
+            <button type='button' class='btn btn-primary btn-lg'>LARGE</button>
+            <button type='button' class='btn btn-success btn-sm'>small</button>
+        </div>
+        <div class='col'>                   <!-- 모바일 화면일 때 사용? -->
+            <button type='button' class='btn btn-info btn-lg btn-block'>BLOCK</button>
+        </div>
+    </div>
+
+    <div class='row mt-3'>
+        <div class='col'> 
+            <a href='#' class='btn btn-warning'>base</a>
+            <a href='#' class='btn btn-warning active'>active</a>
+            <a href='#' class='btn btn-warning disabled'>disabled</a>
+                             <!-- disabled- 클릭 불가-->
+        </div>
+    </div>
+
+    <div class='row mt-3'>
+        <div class='col'>
+            <div class='btn-group'>
+                <button type='button' class='btn btn-secondary'>신발</button>
+                <button type='button' class='btn btn-secondary'>가방</button>
+                <button type='button' class='btn btn-secondary'>향수</button>
+            </div>
+            <div class='btn-group'>
+                <button type='button' class='btn btn-secondary'>상의</button>
+                <button type='button' class='btn btn-secondary'>하의</button>
+            </div>
+        </div>
+        <div class='col'>
+            <div class='btn-group btn-group-lg'>
+                <button type='button' class='btn btn-secondary'>신발</button>
+                <button type='button' class='btn btn-secondary'>가방</button>
+                <button type='button' class='btn btn-secondary'>향수</button>
+            </div>
+        </div>
+        <div class='col'>
+            <div class='btn-toolbar'>
+                <button type='button' class='btn btn-secondary'>신발</button>
+                <button type='button' class='btn btn-secondary'>가방</button>
+            </div>
+        </div>
+    </div>
+
+    <div class='row mt-3'> <!-- 그리드 외, 동적인 화면 만들기-->
+        <div class='col'>
+            <div class='btn-group'>
+                <button type='button' class='btn btn-dark'>식품</button>
+                <div class='btn-group'>
+                    <button type='button' class='btn btn-dark dropdown-toggle' data-toggle='dropdown'>패션</button>
+                    <div class='dropdown-menu'>
+                        <a href='#' class='dropdown-item'>신발</a>
+                        <a href='#' class='dropdown-item'>모자</a>
+                    </div>
+                </div>
+                <button type='button' class='btn btn-dark'>문구</button>
+            </div>
+        </div>
+
+        <div class='col'> <!-- vertical 세로 배치-->
+            <div class='btn-group-vertical'>
+                <button type='button' class='btn btn-dark'>식품</button>
+                <div class='btn-group'>
+                    <button type='button' class='btn btn-dark dropdown-toggle' data-toggle='dropdown'>패션</button>
+                    <div class='dropdown-menu'>
+                        <a href='#' class='dropdown-item'>신발</a>
+                        <a href='#' class='dropdown-item'>모자</a>
+                    </div>
+                </div>
+                <button type='button' class='btn btn-dark'>문구</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+<!-- 
+    이 버튼들을 포트폴리오에 적극적으로 반영해야함.
+    창의 크기에 따라 lay-out이 바뀜
+    모바일 창에는 저랬다가
+    pc 창에는 달라짐
+
+-->

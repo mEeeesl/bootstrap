@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>modal</title>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'></script>
+<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'/>
+<style>
+     
+</style>
+</head>
+<body>
+<div class='container'>
+    <div class='row'>
+        <div class='col'>               <!-- 동적인 화면은 펑션 필요▼-->
+            <button type='button' class='btn btn-primary m-5' data-toggle='modal'
+                data-target='#fruitModal'>과일</button>
+            <button type='button' class='btn btn-danger m-5' data-toggle='modal'
+                data-target='#delModal'>삭제</button>
+        </div>
+    </div>
+</div>
+<!-- tabindex = tab을 눌렀을때 포커싱되는 순서 조정 , -1은 선택이 안됨 -->
+<div class='modal' id='fruitModal' tabindex='-1'>
+    <div class='modal-dialog'>
+        <div class='modal-content'>
+            <div class='modal-header'>
+                <h5 class='modal-title'>과일</h5>    <!-- ▼ 닫기누르면 닫히게, 펑션사용-->
+                <button type='button' class='close' data-dismiss='modal'>
+                    <span>&times;</span><!-- x 버튼 -->
+                </button>
+            </div>
+            <div class='modal-body'>
+                <p>사과, 포도, 딸기</p>
+            </div>
+            <div class='modal-footer'>
+                <button type='button' class='btn btn-secondary' data-dismiss='modal'>
+                    닫기
+                </button>
+                <a href='#' class='btn btn-primary'>확인</a>
+            </div>
+        </div>
+    </div>
+</div>
+   <!-- 삭제하기전에 삭제창을 꼭 띄워야한다 / 실수 방지 -->
+<div class='modal fade' id='delModal' tabindex='-1'>
+    <div class='modal-dialog'>
+        <div class='modal-content'>
+            <div class='modal-header'>
+                <button type='button' class='close' data-dismiss='modal'>
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class='modal-body'>
+                <p>삭제하시겠습니까?</p>
+            </div>
+            <div class='modal-footer'>
+                <button type='button' class='btn btn-secondary' data-dismiss='modal'>
+                    아니오
+                </button>
+                <a href='#' class='btn btn-primary'>예</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<!-- Modal - 포폴시 적극사용 -->
